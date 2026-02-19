@@ -52,6 +52,6 @@ html {
 
 
 body {
-  background: var(--background);
+  background: #f9fafb;
   color: var(--foreground);
 }
