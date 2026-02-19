@@ -1,6 +1,3 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-
 export const metadata = {
   title: "Terms & Conditions — Let's Walk",
   description: "Terms and conditions for using Let's Walk.",
@@ -8,20 +5,18 @@ export const metadata = {
 
 export default function TermsAndConditions() {
   return (
-    <div className="relative min-h-screen bg-white overflow-hidden border-x border-zinc-200/60 max-w-[1440px] mx-auto flex flex-col">
-      <Navbar />
-      <main className="relative flex-1 grid grid-cols-9 px-6 md:px-12 lg:px-20 py-20 md:py-28">
+      <main className="relative flex-1 grid grid-cols-9 px-6 md:px-12 lg:px-20 py-12 md:py-28">
         {/* Vertical lines - full height */}
-        <div className="absolute inset-0 flex pointer-events-none px-6 md:px-12 lg:px-20">
+        <div className="absolute inset-0 hidden md:flex pointer-events-none px-6 md:px-12 lg:px-20">
           {[...Array(9)].map((_, i) => (
             <div
               key={i}
-              className="flex-1 border-r border-zinc-200/40 last:border-r-0 min-h-full"
+              className="flex-1 border-r border-dashed border-zinc-200/40 last:border-r-0 min-h-full"
             />
           ))}
         </div>
         <article className="col-span-9 md:col-start-3 md:col-span-5 md:col-end-8 relative z-10">
-          <h1 className="font-display text-3xl font-bold tracking-tight text-zinc-900">
+          <h1 className="font-display text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900">
             Terms & Conditions
           </h1>
           <p className="mt-2 text-sm text-zinc-400">
@@ -96,7 +91,5 @@ export default function TermsAndConditions() {
           </p>
         </article>
       </main>
-      <Footer />
-    </div>
   );
 }

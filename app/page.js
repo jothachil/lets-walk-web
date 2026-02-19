@@ -1,15 +1,15 @@
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Footer from "./components/Footer";
+import Features from "./components/Features";
+import MobileCTA from "./components/MobileCTA";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-white overflow-hidden border-x border-zinc-200/60 max-w-[1440px] mx-auto">
-      <Navbar />
-      <main className="relative z-10">
+    <>
+      <main className="relative z-10 flex-1">
         <Hero />
+        <Features />
       </main>
-      <Footer />
-    </div>
+      <MobileCTA />
+    </>
   );
 }
