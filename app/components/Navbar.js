@@ -1,9 +1,9 @@
 "use client";
 
+import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,8 +25,8 @@ export default function Navbar() {
               height={36}
               className="rounded-lg"
             />
-            <span className="font-display text-lg font-semibold tracking-tight text-zinc-900">
-              Let&apos;s Walk
+            <span className="font-display text-lg font-bold tracking-tight text-zinc-900">
+              StepUP
             </span>
           </Link>
         </motion.div>
