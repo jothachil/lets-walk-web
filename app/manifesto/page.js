@@ -11,8 +11,14 @@ export default function Manifesto() {
   return (
     <div className="relative min-h-screen bg-white overflow-hidden border-x border-zinc-200/60 max-w-[1440px] mx-auto flex flex-col">
       <Navbar />
-      <main className="relative z-10 flex-1 flex items-start justify-center px-6 py-20 md:py-28">
-        <article className="max-w-lg w-full">
+      <main className="relative flex-1 grid grid-cols-9 px-6 md:px-12 lg:px-20 py-20 md:py-28">
+        {/* Vertical lines - full height */}
+        <div className="absolute inset-0 flex pointer-events-none px-6 md:px-12 lg:px-20">
+          {[...Array(9)].map((_, i) => (
+            <div key={i} className="flex-1 border-r border-zinc-200/40 last:border-r-0 min-h-full" />
+          ))}
+        </div>
+        <article className="col-span-9 md:col-start-3 md:col-span-5 md:col-end-8 relative z-10">
           <h1 className="font-display text-3xl font-bold tracking-tight text-zinc-900">
             Our Manifesto
           </h1>
