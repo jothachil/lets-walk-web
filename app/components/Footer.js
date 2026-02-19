@@ -18,7 +18,12 @@ export default function Footer() {
         </div>
         <span className="text-sm text-zinc-400">
           Made by{" "}
-          <a href="https://johnthachil.com" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-900 transition-colors">
+          <a
+            href="https://johnthachil.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-900 transition-colors"
+          >
             John Thachil
           </a>
         </span>

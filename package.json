@@ -6,8 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "biome check",
-    "format": "biome format --write"
+    "lint": "biome lint .",
+    "format": "biome format .",
+    "check": "biome check .",
+    "update": "pnpm update --interactive --latest",
+    "clean": "rm -rf .next node_modules/.cache"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.36.1",

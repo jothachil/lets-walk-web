@@ -16,9 +16,24 @@ export default function Navbar() {
         </span>
       </a>
       <div className="flex items-center gap-6">
-        <a href="/manifesto" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors">Manifesto</a>
-        <a href="/privacy-policy" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors">Privacy Policy</a>
-        <a href="/terms-and-conditions" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors">Terms & Conditions</a>
+        <a
+          href="/manifesto"
+          className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors"
+        >
+          Manifesto
+        </a>
+        <a
+          href="/privacy-policy"
+          className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors"
+        >
+          Privacy Policy
+        </a>
+        <a
+          href="/terms-and-conditions"
+          className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors"
+        >
+          Terms & Conditions
+        </a>
       </div>
     </nav>
   );
