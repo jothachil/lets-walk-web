@@ -16,11 +16,12 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Let&apos;s Walk
           </span>
         </div>
-        <div className="flex items-center gap-6">
-          <a href="/manifesto" className="text-sm text-zinc-400 hover:text-zinc-900 transition-colors">Manifesto</a>
-          <a href="/privacy-policy" className="text-sm text-zinc-400 hover:text-zinc-900 transition-colors">Privacy Policy</a>
-          <a href="/terms-and-conditions" className="text-sm text-zinc-400 hover:text-zinc-900 transition-colors">Terms & Conditions</a>
-        </div>
+        <span className="text-sm text-zinc-400">
+          Made by{" "}
+          <a href="https://johnthachil.com" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-900 transition-colors">
+            John Thachil
+          </a>
+        </span>
       </div>
     </footer>
   );

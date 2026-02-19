@@ -7,7 +7,7 @@ export default function Hero() {
         <h1 className="mt-8 font-display text-4xl font-bold leading-tight tracking-tight text-zinc-900 md:text-5xl animate-fade-in-up-delay-2">
           Every step counts
         </h1>
-        <p className="mt-2 max-w-lg text-lg leading-relaxed text-zinc-500 mx-auto lg:mx-0 animate-fade-in-up-delay-3">
+        <p className="mt-1 max-w-lg text-lg leading-relaxed text-zinc-500 mx-auto lg:mx-0 animate-fade-in-up-delay-3">
           Track your walks, monitor your health, and build habits that last.
           A beautifully simple way to stay active, every day.
         </p>
