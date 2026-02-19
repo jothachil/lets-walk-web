@@ -1,65 +1,84 @@
 import Image from "next/image";
 
+
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="relative min-h-screen bg-white overflow-hidden">
+      
+
+      <nav className="relative z-10 flex items-center justify-between px-6 py-5 md:px-12 lg:px-20 animate-fade-in-up">
+        <a href="#" className="flex items-center gap-2.5">
+          <Image
+            src="/App Icon.svg"
+            alt="Let's Walk"
+            width={36}
+            height={36}
+            className="rounded-lg"
+          />
+          <span className="font-display text-lg font-semibold tracking-tight text-zinc-900">
+            Let&apos;s Walk
+          </span>
+        </a>
+        <div className="flex items-center gap-6">
+          <a href="#features" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors">Features</a>
+          <a href="https://github.com/jothachil/jotbook/releases" target="_blank" rel="noopener" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors">Changelog</a>
+          <a href="https://github.com/jothachil/jotbook" target="_blank" rel="noopener" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors">GitHub</a>
+        
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      </nav>
+
+
+      <main className="relative z-10">
+        <section className="flex min-h-[calc(100vh-68px)] flex-col items-center justify-center px-6 lg:flex-row lg:items-center lg:justify-between lg:px-20">
+          <div className="max-w-xl text-center lg:text-left">
+            <div className="animate-fade-in-up-delay-1">
+             
+                
+            </div>
+            <h1 className="mt-8 font-display text-4xl font-bold leading-tight tracking-tight text-zinc-900 md:text-5xl animate-fade-in-up-delay-2">
+              Every step counts              
+            </h1>
+            <p className="mt-2 max-w-md text-lg leading-relaxed text-zinc-500 mx-auto lg:mx-0 animate-fade-in-up-delay-3">
+              Track your walks, monitor your health, and build habits that last.
+              A beautifully simple way to stay active, every day.
+            </p>
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:justify-start animate-fade-in-up-delay-4">
+              <a
+                href="#download"
+                className="group relative flex h-13 items-center gap-3 rounded-full bg-brand-500 px-6 font-medium text-white transition-all duration-300 hover:bg-brand-400 hover:shadow-[0_0_30px_rgba(255,73,10,0.3)]"
+              >
+                <Image
+                  src="/apple-icon.svg"
+                  alt="Apple"
+                  width={20}
+                  height={20}
+                />
+                Download for iOS
+              </a>
+              
+            </div>
+          </div>
+
+          <div className="absolute bottom-0 right-0 lg:right-24 xl:right-48 animate-fade-in-up-delay-3">
+            
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/hero.png"
+              alt="Let's Walk app showing step tracking, health metrics, and walk trends"
+              width={2354}
+              height={2188}
+              priority
+              className="relative max-h-[90vh] w-auto object-contain object-bottom drop-shadow-[0_20px_60px_rgba(0,0,0,0.1)]"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          </div>
+        </section>
+
+        
+
+       
       </main>
+
+      
     </div>
   );
 }
