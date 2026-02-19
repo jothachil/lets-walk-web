@@ -15,6 +15,9 @@ export const metadata = {
   title: "Let's Walk — Track Every Step",
   description:
     "A beautiful walking tracker that helps you stay active, monitor your health, and build lasting habits.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
