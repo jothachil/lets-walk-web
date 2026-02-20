@@ -20,6 +20,27 @@ export const metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+  openGraph: {
+    title: "StepUP",
+    description:
+      "A beautiful walking tracker that helps you stay active, monitor your health, and build lasting habits.",
+    type: "website",
+    images: [
+      {
+        url: "/og-graph.jpg",
+        width: 1200,
+        height: 630,
+        alt: "StepUP",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "StepUP",
+    description:
+      "A beautiful walking tracker that helps you stay active, monitor your health, and build lasting habits.",
+    images: ["/og-graph.jpg"],
+  },
 };
 
 export default function RootLayout({ children }) {
