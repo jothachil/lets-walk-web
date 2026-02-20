@@ -1,31 +1,31 @@
 import {
-  IconFlame,
-  IconHeartbeat,
-  IconShoe,
+  IconDeviceWatchFilled,
+  IconFlameFilled,
+  IconHeartFilled,
 } from "@tabler/icons-react";
 
 const features = [
   {
-    icon: IconShoe,
+    icon: IconFlameFilled,
     iconBg: "bg-red-50",
     iconColor: "text-red-500",
     title: "Daily Steps",
     description: "See your step count, distance, and active time at a glance.",
   },
   {
-    icon: IconFlame,
+    icon: IconHeartFilled,
     iconBg: "bg-green-50",
     iconColor: "text-green-600",
     title: "Streaks",
     description: "Keep your daily streak alive and celebrate consistency.",
   },
   {
-    icon: IconHeartbeat,
+    icon: IconDeviceWatchFilled,
     iconBg: "bg-blue-50",
     iconColor: "text-blue-500",
-    title: "Cardio Fitness",
+    title: "Track Walk Workouts",
     description:
-      "Track your VO\u2082 Max to understand your fitness level.",
+      "Log each walk with distance, duration, pace, and progress over time.",
   },
 ];
 
@@ -38,7 +38,11 @@ export default function Features() {
             <div
               className={`shrink-0 flex items-center justify-center w-11 h-11 rounded-xl ${feature.iconBg}`}
             >
-              <feature.icon size={22} stroke={1.5} className={feature.iconColor} />
+              <feature.icon
+                size={22}
+                stroke={1.5}
+                className={feature.iconColor}
+              />
             </div>
             <div>
               <h3 className="text-sm font-semibold text-zinc-900">
