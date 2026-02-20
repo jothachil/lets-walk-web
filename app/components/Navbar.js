@@ -18,13 +18,9 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 py-5 md:px-12 lg:px-20">
         <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
           <Link href="/" className="flex items-center gap-2.5">
-            <Image
-              src="/App Icon.svg"
-              alt="Let's Walk"
-              width={36}
-              height={36}
-              className="rounded-lg"
-            />
+            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-b from-[#ff2e00] to-[#ff2e00]/90 border border-[#FF7032] shadow-[0_2px_4px_rgba(0,0,0,0.1),0_0_0_1px_#CC1C02]">
+              <Image src="/logo.svg" alt="StepUP" width={34} height={34} />
+            </span>
             <span className="font-display text-lg font-bold tracking-tight text-zinc-900">
               StepUP
             </span>

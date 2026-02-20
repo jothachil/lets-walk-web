@@ -1,5 +1,5 @@
-import Hero from "./components/Hero";
 import Features from "./components/Features";
+import Hero from "./components/Hero";
 import MobileCTA from "./components/MobileCTA";
 
 export default function Home() {

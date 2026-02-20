@@ -6,7 +6,7 @@ import {
 } from "@tabler/icons-react";
 
 export const metadata = {
-  title: "Manifesto — Let's Walk",
+  title: "Manifesto",
   description: "Your data stays on your device. Always.",
 };
 
@@ -24,7 +24,7 @@ const sections = [
   {
     icon: IconShieldCheck,
     title: "Built for trust",
-    body: "Most apps ask for your trust and then quietly erode it. We\u2019d rather earn it by design. The architecture of Let\u2019s Walk makes privacy the default — not a toggle buried in settings.",
+    body: "Most apps ask for your trust and then quietly erode it. We\u2019d rather earn it by design. The architecture of StepUP makes privacy the default — not a toggle buried in settings.",
   },
   {
     icon: IconTrash,
@@ -40,7 +40,7 @@ export default function Manifesto() {
         {[...Array(9)].map((_, i) => (
           <div
             key={i}
-            className="flex-1 border-r border-dashed border-zinc-200/40 last:border-r-0 min-h-full"
+            className="flex-1 border-r border-dashed border-zinc-200/60 last:border-r-0 min-h-full"
           />
         ))}
       </div>
@@ -50,8 +50,8 @@ export default function Manifesto() {
         </h1>
 
         <p className="mt-2 text-base leading-relaxed text-zinc-600">
-          We built Let&apos;s Walk with a simple belief: your health data is
-          yours and yours alone.
+          We built StepUP with a simple belief: your health data is yours and
+          yours alone.
         </p>
 
         {sections.map((section, i) => (
