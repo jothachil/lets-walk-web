@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DownloadButton from "./DownloadButton";
 
 export default function Hero() {
   return (
@@ -12,13 +13,7 @@ export default function Hero() {
           beautifully simple way to stay active, every day.
         </p>
         <div className="mt-8 hidden lg:flex flex-col items-center gap-4 sm:flex-row lg:justify-start ">
-          <a
-            href="#download"
-            className="group relative flex h-13 items-center gap-3 rounded-xl px-6 font-medium text-white transition-all duration-300 bg-gradient-to-b from-[#FF5A1A] to-[#E02800] border border-[#FF7032] shadow-[0_2px_4px_rgba(0,0,0,0.1),0_0_0_1px_#CC1C02] hover:from-[#FF6A2E] hover:to-[#E53500] hover:shadow-[0_4px_8px_rgba(255,46,0,0.2),0_0_0_1px_#CC1C02]"
-          >
-            <Image src="/apple-icon.svg" alt="Apple" width={20} height={20} />
-            Download for iOS
-          </a>
+          <DownloadButton />
         </div>
       </div>
 
